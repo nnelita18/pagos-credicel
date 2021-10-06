@@ -355,8 +355,9 @@ body.layout-3 {
     display: inline-block;
     width: 100%;
     text-align: center;
-    height: 60px;
+    height: auto;
     line-height: 60px;
+    background-color: #db9634;
     &.sidebar-brand-sm {
       display: none;
     }

@@ -209,3 +209,4 @@ exports.dist = parallel(folder, compile_scss, compile_html);
 
 // Run this command for dev.
 exports.default = watching;
+

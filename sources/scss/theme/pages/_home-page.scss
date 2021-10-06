@@ -1,0 +1,12 @@
+$home-sec: '.home-sec';
+
+#{$home-sec}{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+	&__actions {
+		padding-top: 14rem;
+	}
+}
