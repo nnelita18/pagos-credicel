@@ -1,12 +1,123 @@
 $home-sec: '.home-sec';
 
 #{$home-sec}{
-	display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
-    height: 100%;
+	// display: flex;
+ //    flex-wrap: wrap;
+ //    align-items: stretch;
+ //    justify-content: center;
+ //    height: 100%;
 	&__actions {
 		padding-top: 14rem;
+	}
+	&__title {
+		position: relative;
+		z-index: 2;
+		.card {
+			background: #fbef8b;
+			margin: 0 auto;
+			border-radius: 2rem;
+		}
+		.title {
+			color: #6d1f7c;
+			font-weight: 700;
+			background: transparent;
+			margin-top: 1rem;
+			text-shadow: 2px 2px #6d1f7c;
+			span {
+				color: #fafafa;
+			}
+		}
+	}
+	&__slider {
+		position: relative;
+		z-index: 1;
+	}
+	&__services {
+		position: relative;
+		z-index: 2;
+		margin-top: -8rem;
+		padding-top: 2rem;
+		padding-bottom: 4rem;
+		@include media-breakpoint-down(sm) {
+			margin-top: 0;
+		}
+	}
+}
+
+.services {
+
+	&__opc {
+		flex: 0 0 30%;
+		max-width: 30%;
+		margin: 0.6rem;
+		.card {
+			border-radius: 0.97rem;
+		}
+		.card-body {
+			text-align: center;
+		}
+		@include media-breakpoint-down(sm) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+$greenopc: #2bbc6e;
+$lgreenopc: #e5f1ed;
+$yellowopc: #f9cf15;
+
+.opcserv {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+	height: 180px;
+	border-radius: 0.97rem;
+	&--lgreen {
+		background-color: $lgreenopc !important;
+	}
+	&--green {
+		background-color: $greenopc !important;
+	}
+	&--yell {
+		background-color: $yellowopc !important;
+	}
+}
+
+.btn-servs {
+	padding: 1rem;
+    display: block;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+	&--green {
+		background: #8bc43f;
+		color: #e5f1ed;
+		&:hover {
+			background-color: #79ab37;
+			color: #e5f1ed;
+			text-decoration: none;
+		}
+	}
+	&--blue {
+		background: #242aa7;
+		color: #e5f1ed;
+		&:hover {
+			background-color: #474ed6;
+			color: #e5f1ed;
+			text-decoration: none;
+		}
+	}
+	&--purple {
+		background: #6d207c;
+		color: #e5f1ed;
+		&:hover {
+			background-color: #952da9;
+			color: #e5f1ed;
+			text-decoration: none;
+		}
 	}
 }

@@ -11,79 +11,60 @@
 
 {% block content %}
         <section class="section home-sec bg-home">
-          <div class="row">
+          <div class="row home-sec__title">
             <div class="col-12">
-              <div class="card">
-                <h1>Tu celular a crédito con CrediCel</h1>
-
-                <h5>Con CrediCel estrena celular de inmediato y ¡págalo en 3, 6, 9 o 12 meses!</h5>
+              <div class="card text-center m-0">
+                <h1 class="title">Credi<span>CEL</span></h1>
+                <!-- <h5>Con CrediCel descubre las diferentes formas que tenemos de financiamiento,<br> llevate tu nuevo celular de la manera mas fácil</h5> -->
               </div>
             </div>
-
           </div>
-          <!-- <div class="row">
-            <img src="../assets/img/bgs/home-credi.png" alt="CrediCel Home" class="img-fluid">
-          </div> -->
-          <div class="row home-sec__actions">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card card-statistic-2">
-                <div class="card-stats">
-                  Realiza tu solicitud en Linea
-                </div>
-                <div class="card-icon shadow-primary bg-primary">
-                  <i class="fas fa-archive"></i>
-                </div>
-                <div class="card-wrap">
-                  <div class="card-header">
-                    <h4>Total Orders</h4>
-                  </div>
-                  <div class="card-body">
-                    59
-                  </div>
-                </div>
+
+          <div class="row home-sec__slider">
+            <div class="col-12 p-0">
+              <div class="owl-carousel owl-theme slider" id="slider1">
+                <div><img alt="image" src="../assets/img/home/banners/bannerpayjoy.jpg"></div>
+                <div><img alt="image" src="../assets/img/home/banners/bannerpayjoy.jpg"></div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card card-statistic-2">
-                <div class="card-chart">
-                  Conoce de forma inmediata si tu crédito fue PRE-AProbado
-                </div>
-                <div class="card-icon shadow-primary bg-primary">
-                  <i class="fas fa-dollar-sign"></i>
-                </div>
-                <div class="card-wrap">
-                  <div class="card-header">
-                    <h4>Estatus</h4>
+          </div>
+
+          <div class="row home-sec__services bg-blackgradient">
+            <div class="col-md-12">
+              <ul class="nav nav-tabs justify-content-center services border-0">
+                <li class="nav-item services__opc">
+                  <div class="card">
+                    <a href="https://www.payjoy.com/merchant2/#/app" target="_blank" class="card-body opcserv opcserv--lgreen">
+                      <img src="../assets/img/home/PayJoy_Logo2.png" alt="Payjoy" class="img-fluid">
+                    </a>
                   </div>
-                  <div class="card-body">
-                    $187,13
+                  <a href="" class="btn-servs btn-servs--green active pageto" id="payjoy-tab">Pagar</a>
+                </li>
+                <li class="nav-item services__opc">
+                  <div class="card">
+                    <a href="https://movil-prod-mx.auth.us-east-1.amazoncognito.com/login?redirect_uri=https%3A%2F%2Fmovil-journey.adelantosmexico.com&response_type=code&client_id=276f16npnrkfgkjfgmnq98iqi5&state=f0n3q13l78j2qj9g1eaVBJBVRv3IoeHv&scope=openid%20email" target="_blank" class="card-body opcserv opcserv--green">
+                      <img src="../assets/img/home/adelantos.png" alt="Adelantos" class="img-fluid">
+                    </a>
                   </div>
-                </div>
-              </div>
+                  <a href="" class="btn-servs btn-servs--blue pageto" id="adelantos-tab">Pagar</a>
+                </li>
+                <li class="nav-item services__opc">
+                  <div class="card">
+                    <a href="https://credicel.mx/solicitud.html" target="_blank" class="card-body opcserv opcserv--yell">
+                      <img src="../assets/img/home/Logo-Credicel-2.png" alt="Credicel" class="img-fluid">
+                    </a>
+                  </div>
+                  <a href="" class="btn-servs btn-servs--purple pageto" id="credicel-tab">Pagar</a>
+                </li>
+              </ul>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card card-statistic-2">
-                <div class="card-chart">
-                  Revisa el balance de tu crédito
-                </div>
-                <div class="card-icon shadow-primary bg-primary">
-                  <i class="fas fa-shopping-bag"></i>
-                </div>
-                <div class="card-wrap">
-                  <div class="card-header">
-                    <h4>Sales</h4>
-                  </div>
-                  <div class="card-body">
-                    4,732
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </section>
 {% endblock %}
 
 {% block plugins_js %}
+<script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 <!--   <script src="../node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
   <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
   <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
@@ -93,4 +74,5 @@
 
 {% block page_js %}
   <!-- <script src="../assets/js/page/index.js"></script> -->
+  <script src="../assets/js/page/modules-slider.js"></script>
 {% endblock %}

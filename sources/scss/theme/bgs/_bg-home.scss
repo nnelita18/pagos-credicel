@@ -1,10 +1,28 @@
 $bg-home: '.bg-home';
 
 #{$bg-home}{
+	// background: {
+	// 	image: url('../img/bgs/home-credi.png');
+	// 	size: cover;
+	// 	position: center;
+	// 	repeat: no-repeat;
+	// }
+}
+
+.bg-login {
+	height: 100vh;
 	background: {
-		image: url('../img/bgs/home-credi.png');
+		image: url('../img/bgs/bg-login.jpg');
 		size: cover;
 		position: center;
 		repeat: no-repeat;
 	}
+	@include media-breakpoint-down(md) {
+		height: auto;
+	}
+}
+
+.bg-blackgradient {
+	background: rgb(8,17,36);
+	background: radial-gradient(circle, rgba(8,17,36,1) 0%, rgba(7,10,13,0.6264880952380952) 20%, rgba(75,77,78,0.010241596638655426) 100%);
 }
