@@ -9,6 +9,28 @@
     background-color: color(primary);
     @include shadow(to_opacity(primary, .2));
   }
+  &.main-navbar {
+    .form-inline {
+      .home-sec__title {
+        .col-12 {
+          @include media-breakpoint-down(sm) {
+            padding: 0;
+          }
+        }
+        .title {
+          @include media-breakpoint-down(sm) {
+            margin: 0;
+          }
+
+        }
+
+      }
+      @include media-breakpoint-down(sm) {
+        width: 74%;
+      }
+    }
+
+  }
 }
 
 .navbar-bg {
@@ -19,7 +41,7 @@
   width: 100%;
   height: 115px;
   background-color: color(primary);
-  z-index: -1;
+  z-index: 1;
 }
 
 .navbar {

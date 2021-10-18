@@ -25,7 +25,8 @@
     }
   }
   .card-header {
-    border-bottom-color: #f9f9f9;
+    background-color: #ead6f9;
+    border-bottom: 4px solid color(primary);
     line-height: 30px;
     -ms-grid-row-align: center;
     align-self: center;
@@ -53,7 +54,7 @@
       }
     }
     h4 {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 28px;
       color: color(primary);
       padding-right: 10px;
@@ -104,6 +105,23 @@
               border-radius: 30px 0 0 30px !important;
             }
           }
+        }
+      }
+    }
+    &.depositos-sald__head {
+      padding: 0;
+      min-height: auto;
+      .btn-link {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 2px 15px;
+        color: #571667;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        text-align: left;
+        &:hover {
+          border-radius: 0.1rem;
+          text-decoration: none;
         }
       }
     }

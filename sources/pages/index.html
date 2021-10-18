@@ -11,34 +11,46 @@
 
 {% block content %}
         <section class="section home-sec bg-home">
-          <div class="row home-sec__title">
+          <!-- <div class="row home-sec__title">
             <div class="col-12">
               <div class="card text-center m-0">
                 <h1 class="title">Credi<span>CEL</span></h1>
-                <!-- <h5>Con CrediCel descubre las diferentes formas que tenemos de financiamiento,<br> llevate tu nuevo celular de la manera mas fácil</h5> -->
+                <h5>Con CrediCel descubre las diferentes formas que tenemos de financiamiento,<br> llevate tu nuevo celular de la manera mas fácil</h5>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="row home-sec__slider">
+          <div class="row home-sec__slider w-100">
             <div class="col-12 p-0">
               <div class="owl-carousel owl-theme slider" id="slider1">
-                <div><img alt="image" src="../assets/img/home/banners/bannerpayjoy.jpg"></div>
-                <div><img alt="image" src="../assets/img/home/banners/bannerpayjoy.jpg"></div>
+                <!-- <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/principal.jpg"></div>
+                <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/principal.jpg"></div> -->
+
+                <div class="owl-lazy slider-hg" data-src="../assets/img/home/banners/principal1.2.6.jpg"></div>
+                <div class="owl-lazy slider-hg" data-src="../assets/img/home/banners/principal1.2.6.jpg"></div>
+                <!-- <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/banner-pj-1920x1279.jpg"></div>
+                <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/banner-pj-2-1920x1279.jpg"></div>
+                <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/banner-adelantos-1920x1279.jpg"></div>
+                <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/banner-adelantos-2-1920x1279.jpg"></div> -->
               </div>
             </div>
           </div>
 
-          <div class="row home-sec__services bg-blackgradient">
-            <div class="col-md-12">
+          <div class="row home-sec__services bg-blackgradient w-100">
+            <div class="col-11">
+              <h4 class="subtitle m-0">Vende telefonos a crédito con cualquiera de estas plataformas ...</h4>
+            </div>
+            <div class="col-xl-10 col-lg-8 col-md-10 col-8">
+
               <ul class="nav nav-tabs justify-content-center services border-0">
                 <li class="nav-item services__opc">
                   <div class="card">
                     <a href="https://www.payjoy.com/merchant2/#/app" target="_blank" class="card-body opcserv opcserv--lgreen">
+                      <!-- <strong>Venta</strong> -->
                       <img src="../assets/img/home/PayJoy_Logo2.png" alt="Payjoy" class="img-fluid">
                     </a>
                   </div>
-                  <a href="" class="btn-servs btn-servs--green active pageto" id="payjoy-tab">Pagar</a>
+                  <a href="" class="btn-servs btn-servs--green active pageto" id="payjoy-tab"><small>Pago</small><strong class="d-block">PAYJOy</strong></a>
                 </li>
                 <li class="nav-item services__opc">
                   <div class="card">
@@ -46,7 +58,7 @@
                       <img src="../assets/img/home/adelantos.png" alt="Adelantos" class="img-fluid">
                     </a>
                   </div>
-                  <a href="" class="btn-servs btn-servs--blue pageto" id="adelantos-tab">Pagar</a>
+                  <a href="" class="btn-servs btn-servs--blue pageto" id="adelantos-tab"><small>Pago</small><strong class="d-block">Adelantos</strong></a>
                 </li>
                 <li class="nav-item services__opc">
                   <div class="card">
@@ -54,7 +66,7 @@
                       <img src="../assets/img/home/Logo-Credicel-2.png" alt="Credicel" class="img-fluid">
                     </a>
                   </div>
-                  <a href="" class="btn-servs btn-servs--purple pageto" id="credicel-tab">Pagar</a>
+                  <a href="" class="btn-servs btn-servs--purple pageto" id="credicel-tab"><small>Pago</small><strong class="d-block">CREDICEL</strong></a>
                 </li>
               </ul>
             </div>

@@ -30,7 +30,7 @@ body.sidebar-mini {
       @include shadow;
       content: ' ';
       position: fixed;
-      background-color: #fff;
+      background-color: #ffffff;
       width: 65px;
       height: 100%;
       left: 0;
@@ -221,6 +221,7 @@ body.layout-2 {
     padding-left: 30px;
     padding-right: 0;
     width: calc(100% - 200px);
+
   }
   .main-footer {
     margin-left: 230px;
@@ -357,7 +358,7 @@ body.layout-3 {
     text-align: center;
     height: auto;
     line-height: 60px;
-    background-color: #ffffff;
+    background-color: #f9f2c8;
     &.sidebar-brand-sm {
       display: none;
     }
@@ -407,7 +408,8 @@ body.layout-3 {
         padding: 0 20px;
         width: 100%;
         letter-spacing: .3px;
-        color: color_lighten(font, 5%);
+        // color: color_lighten(font, 5%);
+        color: color(primary);
         text-decoration: none;
         .badge {
           float: right;
@@ -492,17 +494,28 @@ body.layout-3 {
     }
   }
 }
-
+.main-wrapper {
+      background-color: #e4cb6e;
+}
 .main-content {
   padding-left: 280px;
   padding-right: 30px;
   padding-top: 80px;
   width: 100%;
   position: relative;
+  @include media-breakpoint-down(sm) {
+    width: 100% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
 }
-
+.sect-acenter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .main-footer {
-  padding: 20px 30px 20px 280px;
+  padding: 15px 30px 10px 280px;
   // margin-top: 40px;
   color: color(muted);
   border-top: 1px solid color(light);
@@ -592,6 +605,23 @@ body:not(.sidebar-mini) .sidebar-style-2 {
   }
 }
 
+.ordsm-1 {
+  @include media-breakpoint-down(sm) {
+    order: 1;
+  }
+}
+.ordsm-2 {
+  @include media-breakpoint-down(sm) {
+    order: 2;
+  }
+}
+
+.ordsm-3 {
+  @include media-breakpoint-down(sm) {
+    order: 3;
+  }
+}
+
 @media (max-width: 1024px) {
   .sidebar-gone-hide {
     display: none !important;
@@ -607,6 +637,7 @@ body:not(.sidebar-mini) .sidebar-style-2 {
   body.layout-2,
   body.layout-3 {
     .main-wrapper {
+      background-color: #e4cb6e;
       width: 100%;
       padding: 0;
       display: block;

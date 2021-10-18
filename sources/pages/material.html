@@ -1,0 +1,280 @@
+{% set title = 'Ecommerce Dashboard' %}
+{% set page = 'index.html' %}
+{% extends 'layouts/master.html' %}
+
+{% block plugins_css %}
+  <link rel="stylesheet" href="../node_modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="../node_modules/summernote/dist/summernote-bs4.css">
+  <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+{% endblock %}
+
+{% block content %}
+  <section class="winnings">
+    <div class="row justify-content-center material-header">
+      <div class="col-12 container-title">
+        <div id="banner-title" class="sites__cardtitle ">
+          <span class="title"> <a href="./index.html" class="btn btn-light mr-3" title="Regresar"><i class="fas fa-arrow-left"></i></a>Material Descargable</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="depositos-sald">
+          <div class="accordion" id="accordionExample">
+            <div class="card ass-mat">
+              <div class="card-header depositos-sald__head" id="headingOne">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  FORMATOS CUADRADOS
+                </button>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="ass-mat__box">
+                    <div class="row m-0">
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialModal"><img src="../assets/img/fns-admin/materiald/m1.jpg" alt="material" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialModal"><img src="../assets/img/fns-admin/materiald/m1.jpg" alt="material" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialModal"><img src="../assets/img/fns-admin/materiald/m1.jpg" alt="material" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialModal"><img src="../assets/img/fns-admin/materiald/m1.jpg" alt="material" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <!-- second-row -->
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialModal"><img src="../assets/img/fns-admin/materiald/m1.jpg" alt="material" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialModal"><img src="../assets/img/fns-admin/materiald/m1.jpg" alt="material" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialModal"><img src="../assets/img/fns-admin/materiald/m1.jpg" alt="material" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialModal"><img src="../assets/img/fns-admin/materiald/m1.jpg" alt="material" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card ass-mat">
+              <div class="card-header depositos-sald__head" id="headingTwo">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  FORMATOS RECTANGULARES VERTICALES
+                </button>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="ass-mat__box">
+                    <div class="row m-0">
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialVertModal"><img src="../assets/img/fns-admin/materiald/vertical/v1.jpg" alt="material vertical" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialVertModal"><img src="../assets/img/fns-admin/materiald/vertical/v1.jpg" alt="material vertical" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialVertModal"><img src="../assets/img/fns-admin/materiald/vertical/v1.jpg" alt="material vertical" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialVertModal"><img src="../assets/img/fns-admin/materiald/vertical/v1.jpg" alt="material vertical" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialVertModal"><img src="../assets/img/fns-admin/materiald/vertical/v1.jpg" alt="material vertical" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card ass-mat">
+              <div class="card-header depositos-sald__head" id="headingThree">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  FORMATOS RECTANGULARES HORIZONTALES
+                </button>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="ass-mat__box">
+                    <div class="row m-0">
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialHorizModal"><img src="../assets/img/fns-admin/materiald/horiz/h1.jpg" alt="material horiz" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialHorizModal"><img src="../assets/img/fns-admin/materiald/horiz/h1.jpg" alt="material horiz" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialHorizModal"><img src="../assets/img/fns-admin/materiald/horiz/h1.jpg" alt="material horiz" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialHorizModal"><img src="../assets/img/fns-admin/materiald/horiz/h1.jpg" alt="material horiz" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialHorizModal"><img src="../assets/img/fns-admin/materiald/horiz/h1.jpg" alt="material horiz" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialHorizModal"><img src="../assets/img/fns-admin/materiald/horiz/h1.jpg" alt="material horiz" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialHorizModal"><img src="../assets/img/fns-admin/materiald/horiz/h1.jpg" alt="material horiz" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="mat-box">
+                          <a href="" title="Ver Original" data-toggle="modal" data-target="#materialHorizModal"><img src="../assets/img/fns-admin/materiald/horiz/h1.jpg" alt="material horiz" class="img-fluid"></a>
+                          <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn-sm"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="action-btn text-right"> <a href="" class="btn btn-info action-btn--tut" data-toggle="modal" data-target="#verTutorial">Ver Tutorial</a> <a href="" class="btn btn-success action-btn--faq">Dudas o preguntas</a> </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Material Cuadrado-->
+  <div class="modal fade modalMat" id="materialModal" tabindex="-1" aria-labelledby="materialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row mat-box mat-box--modal">
+            <div class="col-md-8 col-lg-7 modal-mat">
+              <img src="../assets/img/fns-admin/materiald/big/bm3.jpg" alt="material" class="img-fluid">
+            </div>
+            <div class="col-3 modal-dwn py-4">
+              <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Material Vertical-->
+  <div class="modal fade modalMat" id="materialVertModal" tabindex="-1" aria-labelledby="materialVertModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row mat-box mat-box--modal">
+            <div class="col-md-8 col-lg-7 modal-mat">
+              <img src="../assets/img/fns-admin/materiald/vertical/v1.jpg" alt="material vertical" class="img-fluid">
+            </div>
+            <div class="col-3 modal-dwn py-4">
+              <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Material Horizontal-->
+  <div class="modal fade modalMat" id="materialHorizModal" tabindex="-1" aria-labelledby="materialHorizModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row mat-box mat-box--modal">
+            <div class="col-md-8 col-lg-8 modal-mat">
+              <img src="../assets/img/fns-admin/materiald/horiz/h1.jpg" alt="material vertical" class="img-fluid">
+            </div>
+            <div class="col-2 modal-dwn py-4">
+              <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block plugins_js %}
+<script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<!--   <script src="../node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../node_modules/summernote/dist/summernote-bs4.js"></script>
+  <script src="../node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script> -->
+{% endblock %}
+
+{% block page_js %}
+  <!-- <script src="../assets/js/page/index.js"></script> -->
+  <script src="../assets/js/page/modules-slider.js"></script>
+{% endblock %}

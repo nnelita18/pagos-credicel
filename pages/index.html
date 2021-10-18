@@ -18,6 +18,7 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/modules/animate/animate.min.css">
 </head>
 
 <body>
@@ -26,9 +27,22 @@
     <div class="main-wrapper">
       <div class="navbar-bg"></div>
       <nav class="navbar navbar-expand-lg main-navbar">
-        <div class="form-inline mr-auto">
-          <ul class="navbar-nav mr-3">
-            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+        <div class="form-inline mr-auto flex-grow-1">
+          <ul class="navbar-nav mr-3 flex-grow-1">
+            <li>
+              <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <!-- <li class="pl-3">
+              <img src="../assets/img/logo/microtec-logo.png" alt="CrediCel" class="img-fluid" width="135px" height="">
+            </li> -->
+            <li class="flex-grow-1 home-sec__title">
+              <!-- <div class="row home-sec__title"> -->
+                <div class="col-12 text-center">
+                  <h1 class="title"><strong>Portal de venta de a crédito</strong></h1>
+                    <!-- <h1 class="title">Credi<span>CEL</span></h1> -->
+                    <!-- <h5>Con CrediCel descubre las diferentes formas que tenemos de financiamiento,<br> llevate tu nuevo celular de la manera mas fácil</h5> -->
+                </div>
+              <!-- </div> -->
+            </li>
           </ul>
         </div>
         <ul class="navbar-nav navbar-right">
@@ -37,7 +51,10 @@
             <div class="d-sm-none d-lg-inline-block">Hola, Fernando</div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Opciones de usuario</div>
-              <a href="#" class="dropdown-item has-icon text-danger">
+              <a href="#" class="dropdown-item has-icon">
+                <i class="fas fa-exchange-alt"></i> Cambiar contraseña
+              </a>
+              <a href="#" class="dropdown-item has-icon">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
             </div>
@@ -46,8 +63,9 @@
       </nav>
       <div class="main-sidebar">
         <aside id="sidebar-wrapper">
-          <div class="sidebar-brand">
-            <img src="../assets/img/logo/credicel.png" alt="CrediCel" class="img-fluid" width="140px" height="140px">
+          <div class="sidebar-brand p-2">
+            <!-- <img src="../assets/img/logo/microtec-logo.png" alt="CrediCel by Microtec" class="img-fluid" width="180px" height="64px"> -->
+            <img src="../assets/img/dis-logos/royal.jpg" alt="CrediCel by Microtec" class="img-fluid" width="" height="">
             <a href="index.html" class="d-none">CrediCel</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
@@ -76,34 +94,46 @@
       <!-- Main Content -->
       <div class="main-content">
         <section class="section home-sec bg-home">
-          <div class="row home-sec__title">
+          <!-- <div class="row home-sec__title">
             <div class="col-12">
               <div class="card text-center m-0">
                 <h1 class="title">Credi<span>CEL</span></h1>
-                <!-- <h5>Con CrediCel descubre las diferentes formas que tenemos de financiamiento,<br> llevate tu nuevo celular de la manera mas fácil</h5> -->
+                <h5>Con CrediCel descubre las diferentes formas que tenemos de financiamiento,<br> llevate tu nuevo celular de la manera mas fácil</h5>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="row home-sec__slider">
+          <div class="row home-sec__slider w-100">
             <div class="col-12 p-0">
               <div class="owl-carousel owl-theme slider" id="slider1">
-                <div><img alt="image" src="../assets/img/home/banners/bannerpayjoy.jpg"></div>
-                <div><img alt="image" src="../assets/img/home/banners/bannerpayjoy.jpg"></div>
+                <!-- <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/principal.jpg"></div>
+                <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/principal.jpg"></div> -->
+
+                <div class="owl-lazy slider-hg" data-src="../assets/img/home/banners/principal1.2.6.jpg"></div>
+                <div class="owl-lazy slider-hg" data-src="../assets/img/home/banners/principal1.2.6.jpg"></div>
+                <!-- <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/banner-pj-1920x1279.jpg"></div>
+                <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/banner-pj-2-1920x1279.jpg"></div>
+                <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/banner-adelantos-1920x1279.jpg"></div>
+                <div><img class="owl-lazy" alt="image" data-src="../assets/img/home/banners/banner-adelantos-2-1920x1279.jpg"></div> -->
               </div>
             </div>
           </div>
 
-          <div class="row home-sec__services bg-blackgradient">
-            <div class="col-md-12">
+          <div class="row home-sec__services bg-blackgradient w-100">
+            <div class="col-11">
+              <h4 class="subtitle m-0">Vende telefonos a crédito con cualquiera de estas plataformas ...</h4>
+            </div>
+            <div class="col-xl-10 col-lg-8 col-md-10 col-8">
+
               <ul class="nav nav-tabs justify-content-center services border-0">
                 <li class="nav-item services__opc">
                   <div class="card">
                     <a href="https://www.payjoy.com/merchant2/#/app" target="_blank" class="card-body opcserv opcserv--lgreen">
+                      <!-- <strong>Venta</strong> -->
                       <img src="../assets/img/home/PayJoy_Logo2.png" alt="Payjoy" class="img-fluid">
                     </a>
                   </div>
-                  <a href="" class="btn-servs btn-servs--green active pageto" id="payjoy-tab">Pagar</a>
+                  <a href="" class="btn-servs btn-servs--green active pageto" id="payjoy-tab"><small>Pago</small><strong class="d-block">PAYJOy</strong></a>
                 </li>
                 <li class="nav-item services__opc">
                   <div class="card">
@@ -111,7 +141,7 @@
                       <img src="../assets/img/home/adelantos.png" alt="Adelantos" class="img-fluid">
                     </a>
                   </div>
-                  <a href="" class="btn-servs btn-servs--blue pageto" id="adelantos-tab">Pagar</a>
+                  <a href="" class="btn-servs btn-servs--blue pageto" id="adelantos-tab"><small>Pago</small><strong class="d-block">Adelantos</strong></a>
                 </li>
                 <li class="nav-item services__opc">
                   <div class="card">
@@ -119,7 +149,7 @@
                       <img src="../assets/img/home/Logo-Credicel-2.png" alt="Credicel" class="img-fluid">
                     </a>
                   </div>
-                  <a href="" class="btn-servs btn-servs--purple pageto" id="credicel-tab">Pagar</a>
+                  <a href="" class="btn-servs btn-servs--purple pageto" id="credicel-tab"><small>Pago</small><strong class="d-block">CREDICEL</strong></a>
                 </li>
               </ul>
             </div>
@@ -131,18 +161,19 @@
         <div class="footer-left">
 
         </div>
-        <div class="footer-right">
-          <p class="copywrite-text">Copyright &copy;
+        <div class="footer-right copywrite-area">
+          <small class="copywrite-text text-dark m-0">Copyright &copy;
               <script>
                 document.write(new Date().getFullYear());
-              </script>Microtecnologías Móviles S.A. de C.V.</p>
+              </script>Microtecnologías Móviles S.A. de C.V.</small>
         </div>
       </footer>
     </div>
   </div>
 
   <!-- General JS Scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <!--  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>

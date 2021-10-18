@@ -1,0 +1,682 @@
+{% set title = 'Ecommerce Dashboard' %}
+{% set page = 'index.html' %}
+{% extends 'layouts/master.html' %}
+
+{% block plugins_css %}
+  <link rel="stylesheet" href="../node_modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="../node_modules/summernote/dist/summernote-bs4.css">
+  <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+{% endblock %}
+
+{% block content %}
+  <section class="winnings">
+    <div class="row justify-content-center">
+      <!-- <div class="col-12 container-title">
+        <div id="banner-title" class="sites__cardtitle ">
+          <span class="title"> <a href="./index.html" class="btn btn-light mr-3" title="Regresar"><i class="fas fa-arrow-left"></i></a>Material Descargable</span>
+        </div>
+      </div> -->
+      <div class="col-12 mb-4">
+        <div class="hero text-white hero-bg-image hero-bg-parallax" style="background-image: url('../assets/img/bgs/faq-banner.jpg');">
+          <div class="hero-inner">
+            <h2>Preguntas frecuentes
+            <p class="lead">Aquí puede consultar temas de ayuda con nuestros servicios.</p>
+            <p>
+              <strong>¿cómo podemos ayudarle?</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row faq">
+      <div class="col-12 col-xl-4 col-lg-4 col-md-12 bg-white py-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link active" id="v-pills-TAF-tab" data-toggle="pill" href="#v-pills-TAF" role="tab" aria-controls="v-pills-TAF" aria-selected="true">TARJETA AMIGO FÁCIL </a>
+          <a class="nav-link" id="v-pills-adelantos-tab" data-toggle="pill" href="#v-pills-adelantos" role="tab" aria-controls="v-pills-adelantos" aria-selected="false">ADELANTOS MÓVIL</a>
+          <a class="nav-link" id="v-pills-payjoy-tab" data-toggle="pill" href="#v-pills-payjoy" role="tab" aria-controls="v-pills-payjoy" aria-selected="false">PAYJOY</a>
+        </div>
+      </div>
+      <div class="col-12 col-xl-8 col-lg-8 col-md-12 bg-white py-3">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-TAF" role="tabpanel" aria-labelledby="v-pills-TAF-tab">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="faq-section">
+                  <div class="container-fluid bg-primary py-2">
+                    <h5 class="mb-0 text-white rounded">TARJETA AMIGO FÁCIL</h5>
+                  </div>
+                  <div class="accordion" id="accordioncc">
+                    <div class="card">
+                      <div class="card-header" id="heading-c1">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#coldds-c1" aria-expanded="true" aria-controls="coldds-c1">
+                          ¿Qué es tarjeta Amigo fácil?
+                        </button>
+                      </div>
+                      <div id="coldds-c1" class="collapse show" aria-labelledby="heading-c1" data-parent="#accordioncc">
+                        <div class="card-body">
+                          <p>
+                            La tarjeta Amigo fácil (TAF) es el crédito que otorga Telcel para que un cliente pueda adquirir un equipo a crédito, dejando un porcentaje de enganche y pagando el resto a 12 meses.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c2">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c2" aria-expanded="false" aria-controls="coldds-c2">
+                          ¿Qué equipos puedo ofrecer en esta opción?
+                        </button>
+                      </div>
+                      <div id="coldds-c2" class="collapse" aria-labelledby="heading-c2" data-parent="#accordioncc">
+                        <div class="card-body">
+                          Equipos kit de cualquier marca  excepto Apple
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c3">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c3" aria-expanded="false" aria-controls="coldds-c3">
+                            ¿Qué monto de crédito se puede  otorgar?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c3" class="collapse" aria-labelledby="heading-c3" data-parent="#accordioncc">
+                        <div class="card-body">
+                          El monto de crédito autorizado puede variar entre $2000 y $6,600 pesos
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c4">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c4" aria-expanded="false" aria-controls="coldds-c4">
+                            ¿Cuáles son los requisitos para tramitar el crédito?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c4" class="collapse" aria-labelledby="heading-c4" data-parent="#accordioncc">
+                        <div class="card-body">
+                          El monto de crédito autorizado puede variar <ol>
+                            <li>Identificación oficial en físico y vigente ( INE, Pasaporte, Cartilla o cédula menor a 5 años de expedida, Extranjeros FM2 O FM3.)</li>
+                            <li>Formato de buró de buró de crédito proporcionado en sucursal</li>
+                            <li>4 referencias personales ( 1 número fijo y 3 celular o plan telcel)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c5">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c5" aria-expanded="false" aria-controls="coldds-c5">
+                            ¿Qué monto de enganche debo pagar al adquirir un equipo a crédito?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c5" class="collapse" aria-labelledby="heading-c5" data-parent="#accordioncc">
+                        <div class="card-body">
+                          <p>
+                            El monto de enganche puede variar dependiendo del historial crediticio del cliente, oscilando entre el 15% y el 40% del precio del equipo.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c6">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c6" aria-expanded="false" aria-controls="coldds-c6">
+                            ¿La tarjeta tiene costo?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c6" class="collapse" aria-labelledby="heading-c6" data-parent="#accordioncc">
+                        <div class="card-body">
+                          <p>
+                            La tarjeta es completamente gratis
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c7">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c7" aria-expanded="false" aria-controls="coldds-c7">
+                            ¿Cómo recibo mi tarjeta?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c7" class="collapse" aria-labelledby="heading-c7" data-parent="#accordioncc">
+                        <div class="card-body">
+                          <p>
+                            La tarjeta es digital y llega al correo electrónico proporcionado por el cliente
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c8">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c8" aria-expanded="false" aria-controls="coldds-c8">
+                            ¿De qué depende que el crédito sea autorizado?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c8" class="collapse" aria-labelledby="heading-c8" data-parent="#accordioncc">
+                        <div class="card-body">
+                          <p>
+                            Que un cliente se aceptado y resulte autorizado con un monto de crédito determinado, depende del historial crediticio del cliente.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c9">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c9" aria-expanded="false" aria-controls="coldds-c9">
+                            ¿Puedo comprar un equipo de precio mayor que mi monto de crédito autorizado?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c9" class="collapse" aria-labelledby="heading-c9" data-parent="#accordioncc">
+                        <div class="card-body">
+                          <p>
+                            Si, la diferencia entre el precio y el monto autorizado se denomina “sobregiro” y se sumará al enganche del equipo.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c10">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c10" aria-expanded="false" aria-controls="coldds-c10">
+                            ¿En dónde puedo comprar  con mi tarjeta amigo fácil?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c10" class="collapse" aria-labelledby="heading-c10" data-parent="#accordioncc">
+                        <div class="card-body">
+                          <p>
+                            En cualquier sucursal Microtec
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c11">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c11" aria-expanded="false" aria-controls="coldds-c11">
+                            ¿El equipo tiene garantía?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c11" class="collapse" aria-labelledby="heading-c11" data-parent="#accordioncc">
+                        <div class="card-body">
+                          <p>
+                            Si, cuenta con 1 año de garantía con Microtec/Telcel que cubre daños de fábrica.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c12">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c12" aria-expanded="false" aria-controls="coldds-c12">
+                            ¿Qué pasa si soy autorizado y no ocupo mi crédito?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c12" class="collapse" aria-labelledby="heading-c12" data-parent="#accordioncc">
+                        <div class="card-body">
+                          <p>
+                            La evaluación de crédito está disponible durante 6 meses. Posterior a ese periodo, se deberá realizar una nueva evaluación para verificar si las condiciones del crédito no han cambiado
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-adelantos" role="tabpanel" aria-labelledby="v-pills-adelantos-tab">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="faq-section">
+                  <div class="container-fluid bg-primary py-2">
+                    <h5 class="mb-0 text-white rounded">ADELANTOS MÓVIL</h5>
+                  </div>
+                  <div class="accordion" id="accordioncc2">
+                    <div class="card">
+                      <div class="card-header" id="heading-b1">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#coldds-b1" aria-expanded="true" aria-controls="coldds-b1">
+                          ¿Qué es Adelantos Móvil?
+                        </button>
+                      </div>
+                      <div id="coldds-b1" class="collapse show" aria-labelledby="heading-b1" data-parent="#accordioncc2">
+                        <div class="card-body">
+                          <p>
+                            Adelantos móvil es una alternativa para adquirir un equipo a crédito pagándolo de forma semanal  en 3,6,9 o hasta 12 meses, realizando un pago inicial (enganche) al momento de la compra.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-b2">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-b2" aria-expanded="false" aria-controls="coldds-b2">
+                          ¿Cómo funciona Adelantos?
+                        </button>
+                      </div>
+                      <div id="coldds-b2" class="collapse" aria-labelledby="heading-b2" data-parent="#accordioncc2">
+                        <div class="card-body">
+                          <p>
+                            Al comprar un equipo a crédito, una aplicación se instala en el sistema operativo para controlar  el equipo y bloquearlo en caso de falta de pago.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-b3">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-b3" aria-expanded="false" aria-controls="coldds-b3">
+                            ¿Qué equipos puedo adquirir en esta opción?
+                          </button>
+
+                      </div>
+                      <div id="coldds-b3" class="collapse" aria-labelledby="heading-b3" data-parent="#accordioncc2">
+                        <div class="card-body">
+                          <ul>
+                            <li>
+                              Equipos de cualquier marca con sistema operativo Android 7.0 en adelante.
+                            </li>
+                            <li>
+                              Apple y Huawei no están disponibles a través de esta opción por contar con otro tipo de sistema operativo.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-b4">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-b4" aria-expanded="false" aria-controls="coldds-b4">
+                            ¿Cuáles son los requisitos para tramitar el crédito?
+                          </button>
+
+                      </div>
+                      <div id="coldds-b4" class="collapse" aria-labelledby="heading-b4" data-parent="#accordioncc2">
+                        <div class="card-body">
+                          <ol>
+                            <li>
+                              INE físico y vigente
+                            </li>
+                            <li>
+                              Sim nueva o del cliente
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-b5">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-b5" aria-expanded="false" aria-controls="coldds-b5">
+                            ¿Qué monto de enganche debo pagar al adquirir un equipo a crédito con Adelantos?
+                          </button>
+
+                      </div>
+                      <div id="coldds-b5" class="collapse" aria-labelledby="heading-b5" data-parent="#accordioncc2">
+                        <div class="card-body">
+                          <p>
+                            El cliente puede elegir el monto de enganche a pagar: 30%, 40% o 50% del valor del equipo
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-b6">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-b6" aria-expanded="false" aria-controls="coldds-b6">
+                            ¿De qué depende que el crédito sea autorizado?
+                          </button>
+
+                      </div>
+                      <div id="coldds-b6" class="collapse" aria-labelledby="heading-b6" data-parent="#accordioncc2">
+                        <div class="card-body">
+                          <p>
+                            El resultado de la evaluación depende del historial crediticio del cliente para ser aceptado
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-b7">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-b7" aria-expanded="false" aria-controls="coldds-b7">
+                            ¿Cómo se desinstala la aplicación si el equipo fue liquidado?
+                          </button>
+
+                      </div>
+                      <div id="coldds-b7" class="collapse" aria-labelledby="heading-b7" data-parent="#accordioncc2">
+                        <div class="card-body">
+                          <p>
+                            El cliente deberá volver a sucursal y a través de un asesor de ventas solicitar la desinstalación de la app.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-b8">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-b8" aria-expanded="false" aria-controls="coldds-b8">
+                            ¿Donde se realizan los pagos semanales?
+                          </button>
+
+                      </div>
+                      <div id="coldds-b8" class="collapse" aria-labelledby="heading-b8" data-parent="#accordioncc2">
+                        <div class="card-body">
+                          <p>
+                            En todas las sucursales Microtec y/o tiendas de conveniencia ( Oxxo, Walmart, Aurrera, Sam’s)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-b9">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-b9" aria-expanded="false" aria-controls="coldds-b9">
+                            ¿Existen otros motivos de bloqueo con la aplicación de Adelantos Móvil?
+                          </button>
+
+                      </div>
+                      <div id="coldds-b9" class="collapse" aria-labelledby="heading-b9" data-parent="#accordioncc2">
+                        <div class="card-body">
+                          <p>
+                            Si, el equipo puede bloquearse si detecta alguna de las siguientes situaciones:
+                          </p>
+                          <ul>
+                            <li>Cambio de Sim</li>
+                            <li>Cambio de fecha y hora</li>
+                            <li>Intento de desinstalación de la app</li>
+                            <li>Instalación de APK o aplicaciones fuera de google.</li>
+                            <li>Colocar doble SIM</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-b10">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-b10" aria-expanded="false" aria-controls="coldds-b10">
+                            ¿Cuántos equipos puedo adquirir con Adelantos?
+                          </button>
+
+                      </div>
+                      <div id="coldds-b10" class="collapse" aria-labelledby="heading-b10" data-parent="#accordioncc2">
+                        <div class="card-body">
+                          <p>
+                            Sólo puede financiarse 1 equipo a la vez. 7 días después de liquidarlo se puede acceder a otra cotización.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-payjoy" role="tabpanel" aria-labelledby="v-pills-payjoy-tab">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="faq-section">
+                  <div class="container-fluid bg-primary py-2">
+                    <h5 class="mb-0 text-white rounded">PAYJOY:</h5>
+                  </div>
+                  <div class="accordion" id="accordioncc3">
+                    <div class="card">
+                      <div class="card-header" id="heading-c1">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#coldds-c1" aria-expanded="true" aria-controls="coldds-c1">
+                          ¿Qué es Payjoy?
+                        </button>
+                      </div>
+                      <div id="coldds-c1" class="collapse show" aria-labelledby="heading-c1" data-parent="#accordioncc3">
+                        <div class="card-body">
+                          <p>
+                            Payjoy es una alternativa para adquirir un equipo a crédito dejando un pago inicial ( enganche)  y pagando semanalmente el resto en 3,6,9 y hasta 12 meses.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c2">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c2" aria-expanded="false" aria-controls="coldds-c2">
+                          ¿Cuáles son los requisitos?
+                        </button>
+                      </div>
+                      <div id="coldds-c2" class="collapse" aria-labelledby="heading-c2" data-parent="#accordioncc3">
+                        <div class="card-body">
+                          <ol>
+                            <li>INE vigente , Pasaporte o cédula profesional</li>
+                            <li>Correo electrónico</li>
+                            <li>Número activo del cliente</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c3">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c3" aria-expanded="false" aria-controls="coldds-c3">
+                            ¿Qué equipos puedo adquirir?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c3" class="collapse" aria-labelledby="heading-c3" data-parent="#accordioncc3">
+                        <div class="card-body">
+                          <p>
+                            Modelos compatibles con las Marcas Samsung, huawei, LG, Motorola, Hisense, Lanix.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c4">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c4" aria-expanded="false" aria-controls="coldds-c4">
+                            ¿Cómo funciona payjoy?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c4" class="collapse" aria-labelledby="heading-c4" data-parent="#accordioncc3">
+                        <div class="card-body">
+                          <p>
+                            Una aplicación se instala en el equipo adquirido para controlar el dispositivo y mostrar los detalles del financiamiento. La aplicación bloqueará el equipo en caso de falta de pago
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c5">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c5" aria-expanded="false" aria-controls="coldds-c5">
+                            ¿Qué monto de enganche debo pagar al adquirir un equipo a crédito con Adelantos?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c5" class="collapse" aria-labelledby="heading-c5" data-parent="#accordioncc3">
+                        <div class="card-body">
+                          <p>
+                            El monto puede variar entre el 15% y hasta el 40% de enganche de acuerdo a la cotización, modelo y precio del equipo.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c6">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c6" aria-expanded="false" aria-controls="coldds-c6">
+                            ¿Donde se realizan los pagos semanales?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c6" class="collapse" aria-labelledby="heading-c6" data-parent="#accordioncc3">
+                        <div class="card-body">
+                          <p>
+                            En todas las sucursales Microtec, a  través de transferencias bancarias y/o tiendas de conveniencia ( Oxxo, 7Eleven, entre otros).
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c7">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c7" aria-expanded="false" aria-controls="coldds-c7">
+                            ¿El equipo tiene garantía?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c7" class="collapse" aria-labelledby="heading-c7" data-parent="#accordioncc3">
+                        <div class="card-body">
+                          <p>
+                            Si, cuenta con 1 año de garantía con Microtec que cubre daños de fábrica. Además, Payjoy cuenta con un plan de reparación externo que cubre reparaciones hasta por el 25% del valor del equipo
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c8">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c8" aria-expanded="false" aria-controls="coldds-c8">
+                            ¿Cómo se desinstala la aplicación si el equipo fue liquidado?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c8" class="collapse" aria-labelledby="heading-c8" data-parent="#accordioncc3">
+                        <div class="card-body">
+                          <p>
+                            El cliente deberá volver a sucursal y a través de un asesor de ventas solicitar la desinstalación de la app.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-c9">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-c9" aria-expanded="false" aria-controls="coldds-c9">
+                            ¿Cuáles son otros motivos por los que la aplicación puede bloquear el equipo?
+                          </button>
+
+                      </div>
+                      <div id="coldds-c9" class="collapse" aria-labelledby="heading-c9" data-parent="#accordioncc3">
+                        <div class="card-body">
+                          <ul>
+                            <li>Cambiar o retirar la SIM</li>
+                            <li>Colocar una contraseña de seguridad que no recuerde</li>
+                            <li>Intentar eliminar la aplicación </li>
+                            <li>Instalar otras aplicaciones que funcionen como admnistradores en el equipo.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-b10">
+
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coldds-b10" aria-expanded="false" aria-controls="coldds-b10">
+                            ¿Cuántos equipos puedo adquirir con Adelantos?
+                          </button>
+
+                      </div>
+                      <div id="coldds-b10" class="collapse" aria-labelledby="heading-b10" data-parent="#accordioncc3">
+                        <div class="card-body">
+                          <p>
+                            Sólo puede financiarse 1 equipo a la vez. 7 días después de liquidarlo se puede acceder a otra cotización.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Material Cuadrado-->
+  <div class="modal fade modalMat" id="materialModal" tabindex="-1" aria-labelledby="materialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row mat-box mat-box--modal">
+            <div class="col-md-8 col-lg-7 modal-mat">
+              <img src="../assets/img/fns-admin/materiald/big/bm3.jpg" alt="material" class="img-fluid">
+            </div>
+            <div class="col-3 modal-dwn py-4">
+              <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Material Vertical-->
+  <div class="modal fade modalMat" id="materialVertModal" tabindex="-1" aria-labelledby="materialVertModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row mat-box mat-box--modal">
+            <div class="col-md-8 col-lg-7 modal-mat">
+              <img src="../assets/img/fns-admin/materiald/vertical/v1.jpg" alt="material vertical" class="img-fluid">
+            </div>
+            <div class="col-3 modal-dwn py-4">
+              <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Material Horizontal-->
+  <div class="modal fade modalMat" id="materialHorizModal" tabindex="-1" aria-labelledby="materialHorizModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row mat-box mat-box--modal">
+            <div class="col-md-8 col-lg-8 modal-mat">
+              <img src="../assets/img/fns-admin/materiald/horiz/h1.jpg" alt="material vertical" class="img-fluid">
+            </div>
+            <div class="col-2 modal-dwn py-4">
+              <a href="" title="Descargar"><img src="../assets/img/fns-admin/materiald/big/download.png" alt="material" class="img-fluid dwn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block plugins_js %}
+<script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<!--   <script src="../node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../node_modules/summernote/dist/summernote-bs4.js"></script>
+  <script src="../node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script> -->
+{% endblock %}
+
+{% block page_js %}
+  <!-- <script src="../assets/js/page/index.js"></script> -->
+  <script src="../assets/js/page/modules-slider.js"></script>
+{% endblock %}

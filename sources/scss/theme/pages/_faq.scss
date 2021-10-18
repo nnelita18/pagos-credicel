@@ -1,0 +1,64 @@
+$faq-section: '.faq-section';
+$padding-cardheader: .4rem;
+$padding-cardbody: .9rem;
+$card-bodybg: #faf3ff;
+
+.hero {
+	background-position: right center !important;
+	// background-size: contain !important;
+	background-repeat: no-repeat;
+}
+.faq  {
+	.nav-pills {
+		.nav-link {
+			padding: 1rem;
+		}
+		@include media-breakpoint-down(md) {
+			flex-direction: row !important;
+		}
+		@include media-breakpoint-down(sm) {
+			flex-direction: row !important;
+		}
+	}
+
+	.tab-pane {
+		padding-top: 0;
+	}
+}
+
+#{$faq-section}{
+	.accordion {
+		.card {
+			margin-bottom: 0;
+			.card-header{
+				min-height: initial;
+				padding: 0;
+				border-bottom: 1px solid #571666;
+				.btn-link {
+					font-size: 0.92rem;
+					color: #571667;
+					// padding-top: $padding-cardheader;
+					// padding-bottom: $padding-cardheader;
+					// text-decoration: none;
+				    padding: .75rem 1.25rem;
+				    margin-bottom: -1px;
+				    background-color: #fff;
+				    border: 1px solid rgba(0,0,0,.125);
+				    border-radius: 0;
+				    &[aria-expanded="true"] {
+				    	background-color: #ead6f9;
+				    }
+				}
+			}
+			.card-body {
+				background-color: $card-bodybg;
+				padding-top: $padding-cardbody;
+				padding-bottom: $padding-cardbody;
+				p {
+					font-size: 0.94rem;
+					line-height: 1.5;
+				}
+			}
+		}
+	}
+}
